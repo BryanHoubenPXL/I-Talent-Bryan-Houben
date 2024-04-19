@@ -31,6 +31,9 @@
 
 html {
   min-width: 360px;
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
 }
 
 .prose .anchor {
@@ -147,4 +150,164 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.nav-link-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.nav-link {
+  padding: 10px 15px;
+  font-size: 1.2rem; 
+  transition: background-color 0.3s, color 0.3s; 
+  text-decoration: none; 
+  color: #333; 
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0; 
+  color: #000; 
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 60px; 
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px; 
+}
+
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: #333; 
+  text-decoration: none; 
+}
+
+.footer-link:hover {
+  text-decoration: underline; 
+}
+
+.link-text {
+  margin-left: 5px;
+}
+
+.home-container {
+  text-align: center; /* Center-aligns all content in the container */
+  padding: 20px;
+}
+
+.profile-section {
+  margin: 20px 0; /* Adds vertical spacing around the section */
+}
+
+.profile-image {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the set dimensions without distortion */
+  margin: 20px auto; /* Centers the image horizontally */
+}
+
+.main-title {
+  margin-top: 10px; 
+  font-size: 2rem; 
+  color: white; 
+}
+
+.intro-section {
+  max-width: 800px; 
+  margin: 20px auto;
+  padding: 20px;
+  font-size: 1rem; 
+  line-height: 1.6; 
+  text-align: justify; 
+}
+
+/* CSS for home page card links */
+
+.report-links {
+  margin-top: 20px;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.report-card {
+  width: 300px; /* Fixed width */
+  height: 150px; /* Height adjusts based on content */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.report-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.report-details h3 {
+  margin-top: 10px 0 5px;
+}
+
+.report-details p {
+  font-size: 0.9rem;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 350px) {
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
 }
