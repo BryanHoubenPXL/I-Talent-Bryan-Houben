@@ -17,18 +17,6 @@
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-}
-
 html {
   min-width: 360px;
   height: 100%;
@@ -157,6 +145,7 @@ table {
   justify-content: flex-end;
   padding-right: 10px;
   padding-left: 10px;
+  padding-top: 0px;
 }
 
 .nav-link-container {
@@ -183,7 +172,7 @@ table {
   min-height: 100vh;
   max-width: 60%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px 0px 10px;
   padding-bottom: 60px; 
 }
 
@@ -195,8 +184,8 @@ table {
 .footer {
   background-color: #f8f9fa;
   text-align: center;
-  padding: 5px 20px;
-  font-size: 0.8rem;
+  padding: 0px 20px;
+  font-size: 0.7rem;
   width: 100%;
   position: fixed;
   bottom: 0; 
@@ -205,13 +194,14 @@ table {
 
 .footer-links {
   list-style: none;
-  padding: 0;
+  padding-top: 2px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 .footer-link {
+  padding-top: 2px;
   display: flex;
   align-items: center;
   color: #333; 
@@ -309,5 +299,29 @@ table {
 @media (max-width: 350px) {
   .reports-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    max-width: 95%; /* Allow the text to take up more width on small screens */
+    padding: 10px; /* Reduce padding to give more space for text */
+  }
+  .profile-image {
+    width: 100px; /* Smaller size on mobile */
+    height: 100px; /* Maintain the same size for height to keep it circular */
+  }
+  .body-container, .main-content {
+    padding: 0 5px;  /* Symmetric padding */
+  }
+
+  .intro-section {
+    max-width: 95%;  /* More width for intro section */
+    padding: 10px;  /* Reduced padding */
+  }
+
+  .profile-image {
+    width: 80px;  /* Smaller profile image on mobile */
+    height: 80px;
   }
 }
