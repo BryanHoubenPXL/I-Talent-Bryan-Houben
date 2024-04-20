@@ -1,6 +1,7 @@
 import '../style/base.css'
 import '../style/layout.css'
 import '../style/navigation.css'
+import '../style/footer.css'
 
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
@@ -60,11 +61,11 @@ export default function RootLayout({
         <main className="flex-auto min-w-0 main-content">
           <Navbar />
           {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
         </main>
       </body>
+      <Footer />
+      <Analytics />
+      <SpeedInsights />
     </html>
   )
 }

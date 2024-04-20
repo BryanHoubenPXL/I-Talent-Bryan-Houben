@@ -1,7 +1,12 @@
 .navbar {
   background-color: #333;
-  padding: 10px 20px; 
-  text-align: center; 
+  padding: 10px 15px; 
+  border-radius: 12px; 
+  display: flex; 
+  justify-content: center; /* Ensures the items are spread across the full width of the navbar */
+  align-items: center;
+  margin: 0 auto; /* Centers the navbar horizontally in the parent */
+  max-width: 70%;
 }
 
 .nav-links {
@@ -24,4 +29,38 @@
 
 .nav-link:hover {
   color: #ffdd57;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  
+  .navbar {
+    flex-direction: column;
+  }
+  .burger {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-link {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
 }
