@@ -166,6 +166,11 @@ table {
   color: #000; 
 }
 
+.nav-link:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
 .body-container {
   display: flex;
   flex-direction: column;
@@ -302,26 +307,85 @@ table {
   }
 }
 
+/* Implementations for mobile devices */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding-right: 0px;
+  padding-top: 5px;
+}
+
+.hamburger-menu.visible {
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+  border-top: 2px solid #f0f0f0;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 50px; 
+  right: 0;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .intro-section {
-    max-width: 95%; /* Allow the text to take up more width on small screens */
-    padding: 10px; /* Reduce padding to give more space for text */
+    max-width: 95%; 
+    padding: 10px; 
   }
   .profile-image {
-    width: 100px; /* Smaller size on mobile */
-    height: 100px; /* Maintain the same size for height to keep it circular */
+    width: 100px; 
+    height: 100px; 
   }
   .body-container, .main-content {
-    padding: 0 5px;  /* Symmetric padding */
+    padding: 0 5px;  
+  }
+
+  .body-container {
+    max-width: 90%;  
   }
 
   .intro-section {
-    max-width: 95%;  /* More width for intro section */
-    padding: 10px;  /* Reduced padding */
+    max-width: 95%;  
+    padding: 10px;  
   }
 
   .profile-image {
-    width: 80px;  /* Smaller profile image on mobile */
+    width: 80px;  
     height: 80px;
   }
+
+  .nav-link-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .nav-link-container.visible {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 80%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-top: 2px solid #f0f0f0;
+    z-index: 1000;
+    border-radius: 10px;
+  }
 }
+

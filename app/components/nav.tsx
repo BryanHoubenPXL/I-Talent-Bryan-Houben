@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { useState } from 'react'
 
 const navItems = {
   '/': {
@@ -18,10 +20,20 @@ const navItems = {
   },
 }
 
+//☰
 export function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  };
+
   return (
     <nav className="navbar">
-      <div className="nav-link-container">
+      <div className="hamburger" onClick={toggleMenu}>
+        ☰
+      </div>
+      <div className={`nav-link-container ${isOpen ? 'hamburger-menu visible' : 'hamburger-menu'}`}>
         {Object.entries(navItems).map(([path, { name }]) => (
           <Link
             key={path}
