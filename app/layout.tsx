@@ -1,4 +1,7 @@
-import './global.css'
+import '../style/base.css'
+import '../style/layout.css'
+import '../style/navigation.css'
+
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -47,7 +50,8 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        //'text-black bg-white dark:text-white dark:bg-black',
+        'text-white bg-black',
         GeistSans.variable,
         GeistMono.variable
       )}
