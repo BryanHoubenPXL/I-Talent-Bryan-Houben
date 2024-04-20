@@ -62,10 +62,10 @@ export default function RootLayout({
           <Navbar />
           {children}
         </main>
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
-      <Footer />
-      <Analytics />
-      <SpeedInsights />
     </html>
   )
 }

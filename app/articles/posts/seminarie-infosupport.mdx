@@ -1,0 +1,33 @@
+---
+title: 'Seminarie - Infosupport'
+publishedAt: '2023-04-25'
+summary: 'Infosupport is een IT-bedrijf dat verscheidene .NET en Javaoplossingen biedt voor verschillende doeleinden. We kregen een uitgebreide uitleg over de werking van RXJS.'
+---
+
+25 april woonde ik een seminarie bij, gegeven door twee werknemers van Infosupport. Dit IT-bedrijf levert softwareoplossingen voor een breed scala aan toepassingen. Het onderwerp van dit seminarie was reactive programming. Om dit te ondersteunen, hebben we RXJS (Reactive Extension library for JS) bestudeerd: een javascript bibliotheek met verschillende functionaliteiten die reactiviteit ondersteunen. RXJS laat ons toe om op een efficiënte manier asynchrone en event-driven programma’s te schrijven. Ik vond dit onderwerp vooral boeiend omdat ik graag werk in front-end web development.
+
+
+
+Er werd ons uitgelegd dat de basis van RXJS gebaseerd is op twee design patterns: het iteratorpatroon en het observatorpatroon. Deze patronen waren mij al bekend, omdat we deze uitgebreid besproken hadden tijdens de lessen Software Engineering. RXJS implementeert dit door gebruik te maken van zogenaamde observables, waarover we later tijdens de demo meer zouden leren.
+
+Verder werd ons verteld welke eigenschappen een programma moet hebben om "reactief" te zijn. Deze omvatten onder andere het hebben van een responsief ontwerp. Een programma moet ook veerkrachtig en "elastisch" zijn. Het belangrijkste is echter dat het programma “door bepaalde events gestuurd” (event-driven) is. Dit betekent dat het programma wordt aangestuurd door gebeurtenissen of stromen van gebeurtenissen. In plaats van een sequentiële uitvoering waarbij code stap voor stap wordt uitgevoerd, wordt de uitvoering gestart of voortgezet op basis van specifieke gebeurtenissen die zich voordoen. In de context van een webapplicatie zou men als gebeurtenis bijvoorbeeld kunnen denken aan het indrukken van een knop.
+
+Tijdens de demonstratie van RXJS begonnen we met het idee om een webapplicatie te bouwen die "muziek zou spelen", startend met een lijst van muzieknoten die werd afgedrukt. Hierop bouwden we iteratief voort door “muzikanten” klassen toe te voegen die elk zelfstandig muziek speelden. Het cruciale element hier was hoe we RXJS gebruikten om de muzikanten te laten "reageren" op elkaar. Het eindproduct was een orkest van muzikanten die elk muziek speelden als reactie op de noten van andere muzikanten.
+
+Het hart van RXJS is, zoals eerder vermeld, de observable. Andere objecten kunnen zich op een hierop abonneren, zodat ze kunnen reageren op de waarden die de observable uitzendt (in de demonstratie ging het om een lijst van muzieknoten). RXJS biedt verder een uitgebreide verzameling operatoren die kunnen worden toegepast op deze observables om de gegevens te transformeren, te filteren, te combineren of op andere manieren te manipuleren. Deze operatoren werken opeenvolgend op een asynchrone manier.
+
+
+De meest besproken en gebruikte operatoren waren 'pipe', die gebruikt wordt om andere operatoren te koppelen aan observables, 'mergeMap' en 'switchMap'. MergeMap wordt gebruikt om een observable te transformeren naar een ander. De gegevensstromen worden samengevoegd, zodat meerdere binnenkomende waarden tegelijkertijd kunnen worden verwerkt. SwitchMap werkt op een vergelijkbare manier, behalve dat het oorspronkelijke object wordt "uitgeschakeld", wat handig is voor gevallen waar alleen de meest recente respons relevant is.
+
+Ten slotte werd ons een andere voorbereide webapplicatie getoond om te demonstreren hoe krachtig RXJS kan zijn. Alle deelnemers werden gevraagd om via hun mobiele telefoon verbinding te maken met de webapplicatie. Deze zou, wanneer geactiveerd, een liedje afspelen door op elk van onze verbonden apparaten afzonderlijk muzieknoten af te spelen in sequentie. Deze interactieve demonstratie benadrukte niet alleen de mogelijkheden van RXJS in een real-world scenario, maar toonde ook het potentieel van reactieve programmering in moderne webtechnologieën. Dit liet zeker een positieve indruk achter op zowel mij als de anderen, en liet ons denken over mogelijke andere toepassingen van RXJS in de toekomst.
+
+## Reflectie
+
+Het bijwonen van het seminarie over reactive programming en RXJS was een boeiende en waardevolle ervaring. Het begrip en de kracht van RXJS werden helder uitgelegd door de sprekers van Infosupport. Het was bemoedigend om te zien hoe deze patronen werden toegepast in RXJS om asynchrone en event-driven programma's op een efficiënte manier te kunnen schrijven. Het was ook duidelijk aan de energie van de sprekers dat ze dit zelf een boeiend onderwerp vonden, wat het op zich al makkelijker maakt om de materie te volgen. Toegegeven, ik had zelf soms wel moeite met mee te volgen. Dit zorgde er voor dat ik moest bijbenen en jammer genoeg niet de volledige uitleg heb kunnen volgen bij elk onderdeel. Ik kon achteraf wel vragen stellen om mijn samenvatting bij te vullen waar nodig.
+
+De nadruk op de eigenschappen van een "reactief" programma gaf inzicht in de belangrijkste aspecten van een goed ontworpen reactief systeem. Het concept van event-driven programmeren werd duidelijk uitgelegd, waarbij het programma werd aangestuurd door gebeurtenissen of gebeurtenisstromen in plaats van een sequentiële uitvoering. De praktijkvoorbeelden van het bouwen van een muzikale webapplicatie met behulp van RXJS was fascinerend. Het orkest van muzikanten die reageerden op elkaars noten illustreerde op een creatieve manier hoe RXJS observables en operatoren kunnen worden gebruikt om complexe interacties tussen verschillende onderdelen van een systeem mogelijk te maken. Al bij al vond ik dit een goede manier om de capaciteiten van RXJS te demonstreren.
+Het toevoegen van operators zoals pipe, mergeMap en switchMap in RXJS verbeterde het begrip van hoe gegevens kunnen worden gewijzigd en gemanipuleerd op observables. De mogelijkheid om operators asynchrone te combineren heeft nieuwe manieren gegeven om code te schrijven die effectief reageert op veranderende gegevensstromen.
+
+Tot slot demonstreerde de live demonstratie waarbij de webapplicatie via mobiele apparaten een gezamenlijk lied afspeelde, de kracht en potentie van RXJS in de praktijk. Het was indrukwekkend hoe de muzieknoten naadloos op alle verbonden apparaten werden afgespeeld, terwijl RXJS de coördinatie en synchronisatie verzorgde.
+
+Over het geheel genomen was het seminarie een positieve ervaring die mijn begrip van reactive programming en RXJS heeft verbeterd. Ik ben geïnspireerd om deze ideeën toe te passen in mijn eigen projecten en het heeft mijn interesse gewekt om meer te weten te komen over de mogelijkheden van RXJS om responsieve en schaalbare applicaties te bouwen.
