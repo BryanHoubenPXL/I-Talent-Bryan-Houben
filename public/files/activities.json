@@ -1,0 +1,145 @@
+{
+   "activities":[
+         {
+            "title":"Low Code",
+            "description":"Een reeks van seminaries rond verschillende low-code/no-code tools en technieken. Deze seminaries gingen onder andere over low-code web development en API-beheer met Mulesoft.",
+            "location":"PXL-campus (gebouw G)",
+            "date":"28/09/2023",
+            "duration_hours":25
+         },
+         {
+            "title":"Projectweek 2TIN",
+            "description":"Deze week diende als inleiding voor het Research Project. Er werd uitleg gegeven over het verloop van het project en onze verwachtingen. Verder konden we hier ook kennis maken met de rest van het team.",
+            "location":"Online (Teams)",
+            "date":"15/02/2021",
+            "duration_hours":26
+         },
+         {
+            "title":"Brein aan het werk, niet storen",
+            "description":"Een sessie over het stellen van prioriteiten en hoe we het best te werk gaan binnen projecten. Bovendien kregen studenten inzichten over hoe we snel afgeleid konden geraken in ons digitaal tijdperk.",
+            "location":"Online (Teams)",
+            "date":"09/03/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"(Veer)krachtige teams",
+            "description":"Deze sessie ging over het versterken van het teamverband en hoe we beter kunnen samenwerken, ter voorbereiding voor het Research Project. Ook werd er achterhaald wat onze goede (en slechtere) kwaliteiten waren en hoe we hier als team mee om kunnen gaan.",
+            "location":"Online (Teams)",
+            "date":"23/03/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"My team and I",
+            "description":"Een meer “interactieve” sessie, waar we per groep verschillende teambuildingactiviteiten probeerden te voltooien. Het doel was om het team voor het IT-project beter te leren kennen. Ook werd er besproken welke zaken binnen een team belangrijk zijn voor een effectieve samenwerking.",
+            "location":"Corda Campus – PXL",
+            "date":"11/10/2023",
+            "duration_hours":2
+         },
+         {
+            "title":"Brightest - ElasticSearch",
+            "description":"Dit seminarie werd gegeven door Brightest: een IT-bedrijf dat zich focust op softwarekwaliteit en security/performance testen. In dit seminarie gingen we dieper in op ElasticSearch.",
+            "location":"Online (Teams)",
+            "date":"30/03/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"Refleqt - Cypress",
+            "description":"Een seminarie over Behavior Driven Development en hoe de Cypress testing suite hierbij kan helpen. Er werden oefeningen rond Cypress gemaakt.",
+            "location":"Online (Teams)",
+            "date":"20/04/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"TPO – Serverless",
+            "description":"Hier verdiepten we ons in het concept van zogenaamde serverless architecturen, de werking van die architecturen en voor- en nadelen.",
+            "location":"Online (Teams)",
+            "date":"27/04/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"RCCU – Digital Forensics / Cybercrime",
+            "description":"Werknemers van de Regional Computer Crime unit (RCCU) kwamen spreken over de tools en technieken die worden gebruikt bij de politie, met betrekking tot cybercrimes of elektronisch bewijsmateriaal.",
+            "location":"Online (Teams)",
+            "date":"04/05/2021",
+            "duration_hours":3
+         },
+         {
+            "title":"AE – Exploratory API Testing Workshop",
+            "description":"In dit seminarie van AE gingen we dieper in op API testen. De focus lag minder op tools en frameworks, maar eerder bij technieken die we met behulp van die tools kunnen toepassen (Buffer overflow, Mass assignment…)",
+            "location":"PXL-campus (gebouw B)",
+            "date":"08/11/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"Cegeka – Dark launches and gradual releases",
+            "description":"Dit seminarie werd gegeven door Cegeka. Het ging hier over mogelijke strategiën om applicaties en updates uit te rollen naar productieomgevingen. Dit werd uitgelegd aan de hand van een praktisch voorbeeld.",
+            "location":"PXL-campus (gebouw B)",
+            "date":"15/11/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"IBM – Quantum computing",
+            "description":"Deze interessante sessie ging over de basisconcepten achter “quantum computing”. Aan de hand van een theoretische uitleg en praktische voorbeelden werd feit van fictie onderscheiden rond dit onderwerp.",
+            "location":"PXL-campus (gebouw B)",
+            "date":"22/11/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"ACA group - OWASP",
+            "description":"Een seminarie over de OWASP top 10 security risico’s. Na een korte theoretische uitleg konden we aan de slag met de al bekende Juice Shop oefening om de werking van deze risico’s te achterhalen.",
+            "location":"PXL-campus (gebouw B)",
+            "date":"29/11/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"Buzzwatch",
+            "description":"Een tweedaagse hackathon georganiseerd door PXL in samenwerking met Plantsoon. Deze hackathon ging over Buzzwatch: een AI-project dat met behulp van een app waar burgers foto’s en informatie kunnen uploaden bijenpopulaties en voedseltekorten in kaart kan brengen. In groepen van 4-5 brainstormde we over de werking en features van deze app.",
+            "location":"Corda Campus – PXL",
+            "date":"13/02/2024",
+            "duration_hours":25
+         },
+         {
+            "title":"Refleqt (cybersecurity)",
+            "description":"Een seminarie gegeven door Refleqt. Hier gingen we terug dieper in op het onderwerp van cybersecurity, beginnend met een theorieles over de algemene concepten en meest voorkomende securityrisico’s. Vervolgens gingen we praktisch aan de slag met het juice shop platform van OWASP.",
+            "location":"PXL-campus (gebouw G)",
+            "date":"28/03/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"Gluo (Devops & multi-cloud infrastructure)",
+            "description":"2 medewerkers van Gluo gaven een seminarie over DevOps principes en Multicloud architectuur.",
+            "location":"PXL-campus (gebouf G)",
+            "date":"18/04/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"Infosupport (reactive programming)",
+            "description":"Infosupport is een IT-bedrijf dat verscheidene .NET en Javaoplossingen biedt voor verschillende doeleinden. We kregen een uitgebreide uitleg over de werking van RXJS.",
+            "location":"PXL-campus (gebouw G)",
+            "date":"25/04/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"Jidoka (Svelte)",
+            "description":"Dit seminarie ging over Svelte: een front-end javascript/typescript framework. De werking en performantie van dit framework werd uitgekaart en vergeleken met andere populaire alternatieven zoals Angular, React en Vue.",
+            "location":"PXL-campus (gebouw G)",
+            "date":"09/05/2023",
+            "duration_hours":3
+         },
+         {
+            "title":"AE (Docker)",
+            "description":"Dit seminarie werd gegeven door medewerkers van de “Quality@Speed”-branche van AE, waar een focus wordt gelegd on quality assurance and security. Hier ging het voornamelijk over de werking van Docker en Kubernetes.",
+            "location":"PXL-campus (gebouw G)",
+            "date":"16/05/2023",
+            "duration_hours":3
+         },
+
+         {
+            "title":"Python cursus",
+            "description":"Wegens ziekte heeft mijn vriendin jammer genoeg enkele lessen gemist voor haar vak Econometrics, wat economie combineert met databeheer, statistiek en programmeren. Hierdoor miste ze de nodige basiskennis om voldoende bij te dragen aan de groepsopdrachten die op die lessen volgde. Ik heb haar een uitgebreide uitleg gegeven over de basiswerking en logica achter python. Bovendien heb ik ook enkele nuttige bibliotheken uitgelicht die voor deze opdrachten van pas konden komen, zoals pandas en seaborn.",
+            "location":"Bibliotheek Hasselt",
+            "date":"23/10/2023",
+            "duration_hours":5
+         }
+   ]
+}

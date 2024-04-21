@@ -37,7 +37,7 @@
 .main-title {
   margin-top: 10px; 
   font-size: 2rem; 
-  color: white; 
+  color: #ffdd57; 
 }
 
 .intro-section {
@@ -104,4 +104,21 @@
   .body-container {
     max-width: 95%;
   }
+}
+
+.subtitle {
+  margin-top: 10px; 
+  font-size: 1.8rem; 
+  color: #ffdd57;
+}
+
+.subsection {
+  margin: 20px 0;
+  border-top: #ccc 1px solid; 
+}
+
+.extra-title {
+  border-bottom: #ccc 1px solid; 
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }

@@ -7,6 +7,7 @@
   align-items: center;
   margin: 0 auto; /* Centers the navbar horizontally in the parent */
   max-width: 70%;
+  position: fixed;
 }
 
 .nav-links {

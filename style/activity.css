@@ -1,0 +1,71 @@
+
+.activity-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.activity-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 250px;
+    max-width: 250px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.activity-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+  }
+
+.activity-title {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.activity-description {
+    font-size: 0.85rem;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 54px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.activity-card:hover .activity-description {
+    max-height: 150px; /* Increased max height on hover */
+    overflow-y: auto; 
+  }
+
+.activity-info {
+    font-size: 0.75rem;
+    color: #fff;
+    margin-top: 10px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.activity-date {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .activity-card {
+        max-width: 100%;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .activity-info {
+        font-size: 0.7rem;
+    }
+}

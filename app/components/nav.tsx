@@ -3,21 +3,22 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navItems = {
-  '/': {
+  '/#home': {
     name: 'home',
-  },
-  '/activiteiten': {
-    name: 'activiteiten',
-  },
-  '/about': {
+  },  
+  '/#about': {
     name: 'over mij',
   },
-  '/contact': {
+  '/#activities': {
+    name: 'activiteiten',
+  },
+
+  '/#contact': {
     name: 'contact',
   },
 }
 
-//☰
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 

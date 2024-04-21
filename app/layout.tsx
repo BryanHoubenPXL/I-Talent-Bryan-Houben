@@ -12,34 +12,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
-export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
-  title: {
-    default: 'Bryan Houben | I-Talent',
-    template: '%s | Bryan Houben | I-Talent',
-  },
-  description: 'Mijn I-Talent portfolio.',
-  openGraph: {
-    title: 'Mijn I-Talent portfolio',
-    description: 'Mijn I-Talent portfolio.',
-    url: baseUrl,
-    siteName: 'Mijn I-Talent Portfolio',
-    locale: 'en_US',
-    type: 'website',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-}
-
 const cx = (...classes) => classes.filter(Boolean).join(' ')
 
 export default function RootLayout({

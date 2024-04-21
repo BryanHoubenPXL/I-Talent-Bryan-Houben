@@ -88,3 +88,11 @@ export function formatDate(date: string, includeRelative = false) {
 
   return `${fullDate} (${formattedDate})`
 }
+
+export function getActivities() {
+  const filePath = path.join(process.cwd(), 'public/files', 'activities.json'); // Adjust as needed
+  const jsonData = fs.readFileSync(filePath, 'utf8');
+  const data = JSON.parse(jsonData);
+
+  return data.activities;
+}
