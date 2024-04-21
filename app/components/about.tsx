@@ -20,8 +20,8 @@ const About = () => {
         </div>
         <div className="about-buttons">
             <a href="/files/cv.pdf" target="_blank" rel="noopener noreferrer">Mijn CV</a>
-            <a href="/files/cv.pdf" target="_blank" rel="noopener noreferrer">Mijn Portfolio</a>
-            <a href="/files/cv.pdf" target="_blank" rel="noopener noreferrer">Mijn Thalento</a>
+            <a href="/files/thalento.pdf" target="_blank" rel="noopener noreferrer">Mijn Portfolio</a>
+            <a href="/files/italent.pdf" target="_blank" rel="noopener noreferrer">Mijn Thalento</a>
         </div>
     </div>
   )
