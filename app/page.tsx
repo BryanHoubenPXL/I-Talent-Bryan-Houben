@@ -2,6 +2,8 @@ import { Reports } from 'app/components/posts'
 import Image from 'next/image'
 import ActivitiesList from "app/components/activitycard";
 import { getActivities } from 'app/articles/utils';
+import About from './components/about';
+import '../style/contact.css'
 
 export default function Page() {
 
@@ -23,7 +25,7 @@ export default function Page() {
         />
       </div>
       
-      <section className="intro-section">
+      <section className="text-section">
         <p>{intro}</p>
       </section>
       
@@ -34,13 +36,22 @@ export default function Page() {
       <section className="subsection" id="about">
         <h1 className="subtitle">Over Mij</h1>
         <p className="extra-title">Een korte introductie over mezelf.</p>
-
+        <About />
       </section>
 
       <section className="subsection" id="activities">
         <h1 className="subtitle">Activiteiten</h1>
             <p className ="extra-title">Hier vind je een oplijsting van alle activiteiten die ik in het kader van I-Talent heb gevolgd.</p>
             <ActivitiesList activities={activities} />
+      </section>
+
+      <section className='subsection' id="contact">
+        <h1 className="subtitle">Contact</h1>
+        <p className="extra-title">Heb je vragen of wil je met mij in contact komen? Aarzel dan niet om mij te contacteren!</p>
+        <div className="contacts">
+          <p>Email: <a href="mailto:bryan.houben99@gmail.com">bryan.houben99@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/bryan-houben-156387268/" target="_blank" rel="noopener noreferrer">Mijn LinkedIn</a></p>
+        </div>
       </section>
     </div>
   )

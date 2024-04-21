@@ -2,6 +2,7 @@ import '../style/base.css'
 import '../style/layout.css'
 import '../style/navigation.css'
 import '../style/footer.css'
+import '../style/contact.css'
 
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'

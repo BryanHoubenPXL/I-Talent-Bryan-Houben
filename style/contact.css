@@ -1,0 +1,27 @@
+.contacts {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contacts h2 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .contacts p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .contacts a {
+    color: #ffdd57;
+    text-decoration: none;
+  }
+  
+  .contacts a:hover {
+    text-decoration: underline;
+  }
+  

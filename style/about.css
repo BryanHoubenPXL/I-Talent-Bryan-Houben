@@ -1,0 +1,29 @@
+
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.about-buttons a {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.about-buttons a:hover {
+    background-color: #ffe990;
+}
+
+@media (max-width: 768px) {
+    .about-buttons a {
+        flex-grow: 1;
+        margin: 5px;
+        text-align: center;
+    }
+}
